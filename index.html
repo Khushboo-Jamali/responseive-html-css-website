@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    .navbar {
+      width: 100%;
+      height: 100px;
+      background-color: darkolivegreen;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a::after {
+      content: "";
+      width: 0;
+      height: 4px;
+      transition: 0.4s;
+    }
+
+    a:hover {
+      background-color: black;
+    }
+
+    a:hover::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+    }
+
+    .navbar ul {
+      display: flex;
+      gap: 30px;
+      position: relative;
+    }
+
+    .navbar ul li a {
+      color: white;
+      font-size: 25px;
+      padding-right: 30px;
+    }
+
+    header {
+      display: flex;
+      padding: 10px 60px;
+    }
+    header img {
+      height: 100px;
+      width: 110px;
+      border-radius: 50px;
+    }
+    header h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 80px;
+    }
+    header > ul {
+      background-color: green;
+    }
+
+    header ul {
+      position: relative;
+      float: left;
+    }
+    header ul a {
+      display: block;
+    }
+    header ul li {
+      position: relative;
+      float: left;
+    }
+    header ul li:hover {
+      background-image: url(./image/abstract-technology-christmas-tree-microprocessor-glowing-circuit-board-160988383.webp);
+      background-size: 100% 100%;
+    }
+    header ul ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+    }
+    header ul ul li {
+      float: none;
+      width: 200px;
+    }
+    header ul li:hover > ul {
+      display: block;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <header>
+        <img
+          src="./image/abstract-technology-christmas-tree-microprocessor-glowing-circuit-board-160988383.webp"
+          alt=""
+        />
+        <h1>WEBSITE</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="">Home</a>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <h1></h1>
+    </div>
+  </body>
+</html>
